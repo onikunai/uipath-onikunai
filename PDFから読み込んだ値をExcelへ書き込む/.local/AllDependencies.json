@@ -1920,9 +1920,9 @@
     "restore": {
       "projectUniqueName": "PDFから読み込んだ値をExcelへ書き込む",
       "projectName": "PDFから読み込んだ値をExcelへ書き込む",
-      "projectPath": "C:\\Users\\REFRESH\\Documents\\UiPath\\sample1\\.local",
+      "projectPath": "D:\\0000プログラミング\\uipath-onikunai\\PDFから読み込んだ値をExcelへ書き込む\\.local",
       "packagesPath": "C:\\Users\\REFRESH\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\REFRESH\\Documents\\UiPath\\sample1\\.local"
+      "outputPath": "D:\\0000プログラミング\\uipath-onikunai\\PDFから読み込んだ値をExcelへ書き込む\\.local"
     },
     "frameworks": {
       "net461": {

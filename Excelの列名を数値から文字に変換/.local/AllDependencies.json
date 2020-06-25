@@ -1727,11 +1727,11 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "列変換_数値から文字",
-      "projectName": "列変換_数値から文字",
-      "projectPath": "D:\\0000プログラミング\\uipath\\Excelの列名を数値から文字に変換\\Excelの列名を数値から文字に変換\\.local",
+      "projectUniqueName": "Excelの列名を数値から文字に変換",
+      "projectName": "Excelの列名を数値から文字に変換",
+      "projectPath": "D:\\0000プログラミング\\uipath-onikunai\\Excelの列名を数値から文字に変換\\.local",
       "packagesPath": "C:\\Users\\REFRESH\\.nuget\\packages\\",
-      "outputPath": "D:\\0000プログラミング\\uipath\\Excelの列名を数値から文字に変換\\Excelの列名を数値から文字に変換\\.local"
+      "outputPath": "D:\\0000プログラミング\\uipath-onikunai\\Excelの列名を数値から文字に変換\\.local"
     },
     "frameworks": {
       "net461": {
