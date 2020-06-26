@@ -1,5 +1,5 @@
 {
-  "name": "PDFの特定の位置にある値を抽出してExcelに書き込む",
+  "name": "PDFの特定の位置にある値を抽出してExcelに反映させる",
   "description": "空のプロジェクト",
   "main": "Main.xaml",
   "dependencies": {

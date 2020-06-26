@@ -103,7 +103,7 @@
               <av:PointCollection x:Key="ConnectorLocation">300,386 300,416.5</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence DisplayName="2.データ加工" sap:VirtualizedContainerService.HintSize="200,72" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="2.データ加工" sap:VirtualizedContainerService.HintSize="556,1603" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Int32" Name="SalesLoopCount" />
               <Variable x:TypeArguments="x:Int32" Name="GmLoopCount" />
@@ -113,20 +113,20 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:BuildDataTable DataTable="[Achievement]" DisplayName="データ テーブルを構築" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;属性&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;対象月&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;売上予算比&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;粗利予算比&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;属性&gt;会社&lt;/属性&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;属性&gt;第１営業部&lt;/属性&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;属性&gt;第２営業部&lt;/属性&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;属性&gt;第３営業部&lt;/属性&gt;&#xA;  &lt;/TableName&gt;&#xA;&lt;/NewDataSet&gt;" />
-            <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="売上予算比書き出し" sap:VirtualizedContainerService.HintSize="334,54" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[SalesPercent]">
+            <ui:BuildDataTable DataTable="[Achievement]" DisplayName="データ テーブルを構築" sap:VirtualizedContainerService.HintSize="514,59" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;属性&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;対象月&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;売上予算比&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;粗利予算比&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;属性&gt;全社&lt;/属性&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;属性&gt;第１営業部&lt;/属性&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;属性&gt;第２営業部&lt;/属性&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;属性&gt;第３営業部&lt;/属性&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+            <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="売上予算比書き出し" sap:VirtualizedContainerService.HintSize="514,873" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[SalesPercent]">
               <ui:ForEach.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="sales" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="売上予算比書き出し本体" sap:VirtualizedContainerService.HintSize="306,462" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <Sequence DisplayName="売上予算比書き出し本体" sap:VirtualizedContainerService.HintSize="478,734" sap2010:WorkflowViewState.IdRef="Sequence_4">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Assign DisplayName="売上予算比代入" sap:VirtualizedContainerService.HintSize="264,62" sap2010:WorkflowViewState.IdRef="Assign_1">
+                    <Assign DisplayName="売上予算比代入" sap:VirtualizedContainerService.HintSize="436,62" sap2010:WorkflowViewState.IdRef="Assign_1">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:Object">[Achievement.Rows(SalesLoopCount).Item("売上予算比")]</OutArgument>
                       </Assign.To>
@@ -134,16 +134,35 @@
                         <InArgument x:TypeArguments="x:Object">[Trim(sales.ToString)+"%"]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <Assign DisplayName="対象月を代入" sap:VirtualizedContainerService.HintSize="264,62" sap2010:WorkflowViewState.IdRef="Assign_2">
+                    <Assign DisplayName="対象月を代入(参考PDFが4月のため、4月で固定)" sap:VirtualizedContainerService.HintSize="436,62" sap2010:WorkflowViewState.IdRef="Assign_6">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:Object">[Achievement.Rows(SalesLoopCount).Item("対象月")]</OutArgument>
                       </Assign.To>
                       <Assign.Value>
-                        <InArgument x:TypeArguments="x:String">[DateTime.Now.AddMonths(-1).Tostring("yyyyMM")]</InArgument>
+                        <InArgument x:TypeArguments="x:String">["202004"]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <WriteLine DisplayName="デバッグ用1 行を書き込み" sap:VirtualizedContainerService.HintSize="264,64" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[&quot;売上予算比(&quot;+ SalesLoopCount.ToString +&quot;):&quot;+ Trim(sales.ToString)+&quot;%&quot;]" />
-                    <Assign DisplayName="代入" sap:VirtualizedContainerService.HintSize="264,62" sap2010:WorkflowViewState.IdRef="Assign_3">
+                    <ui:CommentOut DisplayName="コメント アウト" sap:VirtualizedContainerService.HintSize="436,232" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="無視されたアクティビティ" sap:VirtualizedContainerService.HintSize="306,154" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign DisplayName="対象月を代入(先月日付を自動入力)" sap:VirtualizedContainerService.HintSize="264,62" sap2010:WorkflowViewState.IdRef="Assign_2">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:Object">[Achievement.Rows(SalesLoopCount).Item("対象月")]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[DateTime.Now.AddMonths(-1).Tostring("yyyyMM")]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                    </ui:CommentOut>
+                    <WriteLine DisplayName="デバッグ用1 行を書き込み" sap:VirtualizedContainerService.HintSize="436,64" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[&quot;売上予算比(&quot;+ SalesLoopCount.ToString +&quot;):&quot;+ Trim(sales.ToString)+&quot;%&quot;]" />
+                    <Assign DisplayName="代入" sap:VirtualizedContainerService.HintSize="436,62" sap2010:WorkflowViewState.IdRef="Assign_3">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:Int32">[SalesLoopCount]</OutArgument>
                       </Assign.To>
@@ -156,12 +175,12 @@
               </ui:ForEach.Body>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:ForEach>
-            <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="粗利予算比書き出し" sap:VirtualizedContainerService.HintSize="334,54" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[GMPercent]">
+            <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="粗利予算比書き出し" sap:VirtualizedContainerService.HintSize="514,499" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[GMPercent]">
               <ui:ForEach.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
@@ -195,7 +214,7 @@
               </ui:ForEach.Body>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
@@ -221,7 +240,7 @@
                       <av:PointCollection x:Key="ConnectorLocation">100,487 100,560 190,560</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="3.Excelに書き出し(Excel2010以降)" sap:VirtualizedContainerService.HintSize="434,288" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" Visible="False" WorkbookPath="OUTPUT\目標達成率.xlsx">
+                  <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="3.Excelに書き出し(Excel2010以降)" sap:VirtualizedContainerService.HintSize="200,54" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" Visible="False" WorkbookPath="OUTPUT\目標達成率.xlsx">
                     <ui:ExcelApplicationScope.Body>
                       <ActivityAction x:TypeArguments="ui:WorkbookApplication">
                         <ActivityAction.Argument>
