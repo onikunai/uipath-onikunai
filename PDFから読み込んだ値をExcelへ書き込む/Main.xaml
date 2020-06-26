@@ -89,7 +89,7 @@
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:ReadPDFText PreserveFormatting="{x:Null}" DisplayName="PDF のテキストを読み込み" FileName="Text\営業本部長メッセージ.pdf" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="ReadPDFText_1" Range="All" Text="[PDFText]" />
+        <ui:ReadPDFText PreserveFormatting="{x:Null}" DisplayName="PDF のテキストを読み込み" FileName="INPUT\営業本部長メッセージ.pdf" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="ReadPDFText_1" Range="All" Text="[PDFText]" />
         <WriteLine DisplayName="1 行を書き込み" sap:VirtualizedContainerService.HintSize="334,64" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[PDFText]" />
         <ui:Matches BuilderPattern="(?&lt;=売上予算比).*?(?=%)" DisplayName="売上予算比を取得" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="Matches_1" Input="[PDFText]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;カスタム&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=売上予算比).*?(?=%)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;指定回数&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=売上予算比).*?(?=%)" RegexOption="IgnoreCase" Result="[SalesPercent]" />
         <ui:Matches BuilderPattern="(?&lt;=粗利予算比).*?(?=%)" DisplayName="粗利予算比を取得" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="Matches_2" Input="[PDFText]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;カスタム&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=粗利予算比).*?(?=%)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;指定回数&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=粗利予算比).*?(?=%)" RegexOption="IgnoreCase" Result="[GMPercent]" />
@@ -202,10 +202,7 @@
             </ui:ForEach>
           </Sequence>
           <FlowStep.Next>
-            <FlowDecision x:Name="__ReferenceID4" DisplayName="フロー条件分岐" sap:VirtualizedContainerService.HintSize="90,87" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
-              <FlowDecision.Condition>
-                <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="input = &quot;Yes&quot;" />
-              </FlowDecision.Condition>
+            <FlowDecision x:Name="__ReferenceID4" Condition="[input = &quot;Yes&quot;]" DisplayName="フロー条件分岐" sap:VirtualizedContainerService.HintSize="90,87" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -224,7 +221,7 @@
                       <av:PointCollection x:Key="ConnectorLocation">100,487 100,560 190,560</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="3.Excelに書き出し(Excel2010以降)" sap:VirtualizedContainerService.HintSize="200,54" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" Visible="False" WorkbookPath="目標達成率.xlsx">
+                  <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="3.Excelに書き出し(Excel2010以降)" sap:VirtualizedContainerService.HintSize="200,54" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" Visible="False" WorkbookPath="OUTPUT\目標達成率.xlsx">
                     <ui:ExcelApplicationScope.Body>
                       <ActivityAction x:TypeArguments="ui:WorkbookApplication">
                         <ActivityAction.Argument>
@@ -274,7 +271,7 @@
                       <av:PointCollection x:Key="ConnectorLocation">530,487 530,560 390,560</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:AppendRange DataTable="[Achievement]" DisplayName="3.Excelに書き出し(Excel2010より前)" sap:VirtualizedContainerService.HintSize="200,54" sap2010:WorkflowViewState.IdRef="AppendRange_1" SheetName="達成率" WorkbookPath="目標達成率.xlsx">
+                  <ui:AppendRange DataTable="[Achievement]" DisplayName="3.Excelに書き出し(Excel2010より前)" sap:VirtualizedContainerService.HintSize="334,115" sap2010:WorkflowViewState.IdRef="AppendRange_1" SheetName="達成率" WorkbookPath="OUTPUT\目標達成率.xlsx">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
