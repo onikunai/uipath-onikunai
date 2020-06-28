@@ -1727,8 +1727,8 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "PDFの特定の位置にある値を抽出してExcelに書き込む",
-      "projectName": "PDFの特定の位置にある値を抽出してExcelに書き込む",
+      "projectUniqueName": "PDFの特定の位置にある値を抽出してExcelに反映させる",
+      "projectName": "PDFの特定の位置にある値を抽出してExcelに反映させる",
       "projectPath": "D:\\0000プログラミング\\uipath-onikunai\\PDFの特定の位置にある値を抽出してExcelに反映させる\\.local",
       "packagesPath": "C:\\Users\\REFRESH\\.nuget\\packages\\",
       "outputPath": "D:\\0000プログラミング\\uipath-onikunai\\PDFの特定の位置にある値を抽出してExcelに反映させる\\.local"
